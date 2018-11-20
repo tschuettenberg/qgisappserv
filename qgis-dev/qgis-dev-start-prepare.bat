@@ -26,6 +26,6 @@ REM Modus setzen (RUN|) [leer lassen für Konfigurationsmodus; "RUN" für Nutzer
 set "QGIS_MODE="
 call "%OSGEO4W_ROOT%\bin\qgis-dev-prepare.bat" %QGIS_MODE%
 
-REM start "QGIS" /B "%OSGEO4W_ROOT%\bin\qgis-dev-bin-g7.4.2.exe" %*
-start "QGIS" /B "%OSGEO4W_ROOT%\bin\qgis-dev-bin-g7.4.2.exe" --profiles-path "%QGIS_UDIR%" %*
+REM start "QGIS" /B "%OSGEO4W_ROOT%\bin\qgis-dev-bin-g7.exe" %*
+start "QGIS" /B "%OSGEO4W_ROOT%\bin\qgis-dev-bin-g7.exe" --profiles-path "%QGIS_UDIR%" %*
 
