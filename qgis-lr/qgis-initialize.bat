@@ -2,6 +2,9 @@ REM Batch-Datei for initialize QGIS 3
 echo on
 chcp 1252
 
+REM Change directory to start the command "nircmd"
+cd /D Q:\OSGeo4W64\bin
+
 REM Text for the desktop shortcut.
 set "QGIS_TEXT=QGIS 3 (serverbasiert, OSGeo4W)"
 set "OSGEO4W_ROOT=Q:\OSGeo4W64"
