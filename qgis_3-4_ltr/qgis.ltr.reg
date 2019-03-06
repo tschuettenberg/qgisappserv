@@ -22,4 +22,3 @@ Windows Registry Editor Version 5.00
 @=""
 [HKEY_CLASSES_ROOT\QGIS Project\Shell\open\command]
 @="\"Q:\\OSGeo4W64\\bin\\qgis-ltr-start.bat\" \"%1\""
-
