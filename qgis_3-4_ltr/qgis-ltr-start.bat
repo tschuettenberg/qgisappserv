@@ -1,3 +1,6 @@
+REM QGIS 3.4 LTR Startdatei für Nutzerbetrieb auf Clients 
+REM basiert auf qgis-ltr-start-prepare.bat mit "QGIS_MODE=RUN"
+
 @echo off
 call "%~dp0\o4w_env.bat"
 call qt5_env.bat
