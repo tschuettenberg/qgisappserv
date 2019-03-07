@@ -1,3 +1,5 @@
+REM QGIS 3.4 LTR Startdatei für Konfektionierung auf Appserver 
+
 @echo off
 call "%~dp0\o4w_env.bat"
 call qt5_env.bat
