@@ -6,7 +6,7 @@ REM Change directory to start the command "nircmd"
 cd /D Q:\OSGeo4W64\bin
 
 REM Text for the desktop shortcut.
-set "QGIS_TEXT=QGIS 3.4 LTR (serverbasiert P, OSGeo4W)"
+set "QGIS_TEXT=QGIS 3.4 LTR (serverbasiert, OSGeo4W)"
 set "OSGEO4W_ROOT=Q:\OSGeo4W64"
 
 REM Create shortcut in the programs group for all user (public)
