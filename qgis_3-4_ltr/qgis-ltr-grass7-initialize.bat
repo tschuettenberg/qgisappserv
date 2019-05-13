@@ -24,18 +24,6 @@ if not exist "%PUBLIC%\Desktop\%QGIS_TEXT%.lnk" (
    )
 
 REM Create file and icon associations 
-REM start/wait regedit -s "%OSGEO4W_ROOT%\bin\qgis.ltr.reg"
 start/wait regedit -s "%OSGEO4W_ROOT%\apps\qgis-ltr\bin\qgis.reg
-
-assoc .qgs=QGIS Project
-assoc .qlr=QGIS Layer Definition
-assoc .qml=QGIS Layer Settings
-assoc .qpt=QGIS Composer Template
-
-REM Install Symbol-Fonts 
-REM copy /Y \\<Netzwerkpfad zur Font-Datei>\<Name der Fontdatei>.ttf C:\Windows\Fonts\<Name der Fontdatei>.ttf
-
-REM Registry Symbol-Fonts
-REM start /wait regedit -s "%OSGEO4W_ROOT%\bin\<Name der Reg-Datei>.reg"
 
 exit /b
