@@ -76,12 +76,12 @@ REM set "UI=%UN%/profiles/default"
 
 REM Replace original paths in the settings ini-file to the correct path on user pc 
 copy "%UN%\profiles\default\QGIS\QGIS3.ini" "%UN%\profiles\default\QGIS\QGIS3.tmpl"
-minised "s#%UO%#%UN%#g;s#%UO:/=\\\\%#%UN:/=\\\\%#g;s#%PO%#%PN%#g;s#%PO:/=\\\\%#%PN:/=\\\\%#g;s#%QO%#%QN%#g;s#%QO:/=\\\\%#%QN:/=\\\\%#g" "%UN%\profiles\default\QGIS\QGIS3.org" > "%UN%\profiles\default\QGIS\QGIS3.ini"
+minised "s#%UO%#%UN%#g;s#%UO:/=\\\\%#%UN:/=\\\\%#g;s#%PO%#%PN%#g;s#%PO:/=\\\\%#%PN:/=\\\\%#g;s#%QO%#%QN%#g;s#%QO:/=\\\\%#%QN:/=\\\\%#g" "%UN%\profiles\default\QGIS\QGIS3.tmpl" > "%UN%\profiles\default\QGIS\QGIS3.ini"
 
 REM Create shortcut in the programs group for user 
 if not exist "%ProgramData%\Microsoft\Windows\Start Menu\Programs\QGIS\%QGIS_TEXT%.lnk" (
    if not exist "%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\QGIS\%QGIS_TEXT%.lnk" (
-      nircmd shortcut """%OSGEO4W_ROOT%""\bin\qgis-ltr-start.bat" "~$folder.programs$\QGIS" "%QGIS_TEXT%" "" """%OSGEO4W_ROOT%""\icons\QGIS.ico" "0" "min" """%OSGEO4W_ROOT%""\bin" ""
+      nircmd shortcut """%OSGEO4W_ROOT%""\bin\qgis-ltr-grass7-start.bat" "~$folder.programs$\QGIS" "%QGIS_TEXT%" "" """%OSGEO4W_ROOT%""\apps\qgis-ltr\icons\QGIS.ico" "0" "min" """%OSGEO4W_ROOT%""\bin" ""
 	  )
    )
 
@@ -94,7 +94,7 @@ if not exist "%ProgramData%\Microsoft\Windows\Start Menu\Programs\QGIS\OSGeo4W S
 REM Create shortcut on desktop for user 
 if not exist "%PUBLIC%\Desktop\%QGIS_TEXT%.lnk" (
    if not exist "%USERPROFILE%\Desktop\%QGIS_TEXT%.lnk" (
-      nircmd shortcut """%OSGEO4W_ROOT%""\bin\qgis-ltr-start.bat" "~$folder.desktop$" "%QGIS_TEXT%" "" """%OSGEO4W_ROOT%""\icons\QGIS.ico" "0" "min" """%OSGEO4W_ROOT%""\bin" ""
+      nircmd shortcut """%OSGEO4W_ROOT%""\bin\qgis-ltr-grass7-start.bat" "~$folder.desktop$" "%QGIS_TEXT%" "" """%OSGEO4W_ROOT%""\apps\qgis-ltr\icons\QGIS.ico" "0" "min" """%OSGEO4W_ROOT%""\bin" ""
 	  )
    )
 
