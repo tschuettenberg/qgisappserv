@@ -19,6 +19,6 @@ set "QGIS_UDIR=%USERPROFILE%\AppData\Roaming\QGIS\OSGeo4W\qgis-ltr"
 
 REM Modus setzen (RUN|) [leer lassen für Konfigurationsmodus; "RUN" für Nutzerbetrieb]
 set "QGIS_MODE=RUN"
-call "%OSGEO4W_ROOT%\bin\qgis-ltr-prepare.bat" %QGIS_MODE%
+call "%OSGEO4W_ROOT%\bin\qgis-ltr-grass7-prepare.bat" %QGIS_MODE%
 
 start "QGIS" /B "%OSGEO4W_ROOT%\bin\qgis-ltr-bin-g7.exe" --profiles-path "%QGIS_UDIR%" %*
