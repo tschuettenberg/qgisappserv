@@ -76,7 +76,7 @@ REM Pfad für ini-Datei für Profil "default" definieren
 REM set "UI=%UN%/profiles/default"
 
 REM Replace original paths in the settings ini-file to the correct path on user pc 
-copy "%UN%\profiles\default\QGIS\QGIS3.ini" "%UN%\profiles\default\QGIS\QGIS3.org"
+copy "%UN%\profiles\default\QGIS\QGIS3.ini" "%UN%\profiles\default\QGIS\QGIS3.tmpl"
 minised "s#%UO%#%UN%#g;s#%UO:/=\\\\%#%UN:/=\\\\%#g;s#%PO%#%PN%#g;s#%PO:/=\\\\%#%PN:/=\\\\%#g;s#%QO%#%QN%#g;s#%QO:/=\\\\%#%QN:/=\\\\%#g" "%UN%\profiles\default\QGIS\QGIS3.org" > "%UN%\profiles\default\QGIS\QGIS3.ini"
 
 REM Create shortcut in the programs group for user 
